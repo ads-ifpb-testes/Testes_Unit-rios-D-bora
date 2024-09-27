@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                            
+    "forceConsistentCasingInFileNames": true,        
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports":true,
+    "outDir": "./dist"
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./dist"]
+}

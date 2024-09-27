@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background-color: #30302f;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.c-form-add-book {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.c-list-books {
+    width: 80%;
+    height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+}
+.form-register input {
+    margin-bottom: 0.5rem; /* Ajuste a medida conforme necessário */
+} 
+#btnCadastrar {
+    background-color: #1b613d; /* Sua cor desejada */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+}
+
+#btnCadastrar:hover {
+    background-color: #1f794a; /* Cor ao passar o mouse */
+}
+
+.book-list {
+    margin-top: 20px; /* Espaço acima da lista de livros */
+}
+
+.book-item {
+    display: flex; /* Alinha os itens em linha */
+    background-color: #1b613d; /* Cor de fundo */
+    justify-content: space-between; /* Espaçamento igual entre os itens */
+    padding: 10px; /* Espaço interno */
+    align-items: center; /* Alinha os itens verticalmente */
+    border-radius: 5px; /* Bordas arredondadas, opcional */
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.book-item > * {
+    flex: 1; /* Faz com que cada item ocupe igual espaço */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Remove margens entre itens para melhor alinhamento */
+.book-item > *:not(:last-child) {
+    margin-right: 0; /* Sem margem entre itens */
+}
+
+
+
+ .book-item-title {
+    display: flex; /* Alinha os itens em linha */
+    background-color: #339663; /* Cor de fundo */
+    justify-content: space-between; /* Espaçamento igual entre os itens */
+    padding: 10px; /* Espaço interno */
+    align-items: center; /* Alinha os itens verticalmente */
+    border-radius: 5px; /* Bordas arredondadas, opcional */
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.book-item-title > * {
+    flex: 1; /* Faz com que cada item ocupe igual espaço */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Remove margens entre itens para melhor alinhamento */
+.book-item-title > *:not(:last-child) {
+    margin-right: 0; /* Sem margem entre itens */
+}
+
+#editBookModalm .modal-content {
+    color: black; 
+}
+#editBookModalm label {
+    color: black; /* Garante que o título da modal e as labels fiquem em preto */
+}
+#editBookModalm h5 {
+    color: black; /* Garante que o título da modal e as labels fiquem em preto */
+}

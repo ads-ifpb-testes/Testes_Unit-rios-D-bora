@@ -1,0 +1,40 @@
+{
+  "name": "testes-debora",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn ./src/server.ts",
+    "unitario": "npx vitest .spec --ui",
+    "integracao": "npx vitest .test --ui",
+    "sistema": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.13",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "^22.6.1",
+    "@vitest/ui": "^2.1.1",
+    "cors": "^2.8.5",
+    "cypress": "^13.15.0",
+    "express": "^4.21.0",
+    "morgan": "^1.10.0",
+    "prisma": "^5.20.0",
+    "zod": "^3.23.8"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "jsonwebtoken": "^9.0.2",
+    "supertest": "^7.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2",
+    "uuid": "^10.0.0",
+    "vitest": "^2.1.1"
+  }
+}
